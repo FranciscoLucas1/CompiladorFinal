@@ -1,0 +1,57 @@
+
+
+escreva("Calculo de Area de Figuras Geometricas")
+
+var opcao
+var area
+var lado
+var base
+var altura
+var opcao_valida 
+
+opcao_valida = 0
+while (opcao_valida == 0) {
+    escreva("Escolha a figura para calcular a area:")
+    escreva("1. Quadrado")
+    escreva("2. Retangulo")
+    escreva("3. Triangulo")
+    ler(opcao)
+
+    if (opcao >= 1) {
+        if (opcao <= 3) {
+            opcao_valida = 1 
+        }
+    }
+
+    if (opcao_valida == 0) {
+        escreva("Opcao invalida! Por favor, digite 1, 2 ou 3.")
+        escreva("")
+    }
+}
+
+if (opcao == 1) {
+    escreva("Digite o valor do lado do quadrado:")
+    ler(lado)
+    area = lado * lado
+    escreva("A area do quadrado é:", area)
+}
+
+if (opcao == 2) {
+    escreva("Digite o valor da base do retangulo:")
+    ler(base)
+    escreva("Digite o valor da altura do retangulo:")
+    ler(altura)
+    area = base * altura
+    escreva("A area do retangulo é:", area)
+}
+
+if (opcao == 3) {
+    escreva("Digite o valor da base do triangulo:")
+    ler(base)
+    escreva("Digite o valor da altura do triangulo:")
+    ler(altura)
+    area = (base * altura) / 2
+    escreva("A area do triangulo é:", area)
+}
+
+fim

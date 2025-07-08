@@ -1,0 +1,110 @@
+// ===================================================================
+// == Controle de Notas Escolares 
+// ===================================================================
+
+escreva("--- Sistema de Controle de Notas com Media Ponderada ---")
+
+var notas[4]
+var pesos[4]
+var soma_ponderada
+var soma_pesos
+var media_final
+var valor_temp 
+
+escreva("Por favor, digite a nota e o peso de cada um dos 4 bimestres.")
+escreva("")
+
+
+escreva("Digite a nota do 1o bimestre:")
+ler(valor_temp)
+while (valor_temp <= 0) {
+    escreva("Erro! A nota deve ser um valor positivo. Digite novamente:")
+    ler(valor_temp)
+}
+notas[0] = valor_temp
+
+escreva("Agora, digite o peso para a nota 1:")
+ler(valor_temp)
+while (valor_temp <= 0) {
+    escreva("Erro! O peso deve ser um valor positivo. Digite novamente:")
+    ler(valor_temp)
+}
+pesos[0] = valor_temp
+escreva("")
+
+escreva("Digite a nota do 2o bimestre:")
+ler(valor_temp)
+while (valor_temp <= 0) {
+    escreva("Erro! A nota deve ser um valor positivo. Digite novamente:")
+    ler(valor_temp)
+}
+notas[1] = valor_temp
+
+escreva("Agora, digite o peso para a nota 2:")
+ler(valor_temp)
+while (valor_temp <= 0) {
+    escreva("Erro! O peso deve ser um valor positivo. Digite novamente:")
+    ler(valor_temp)
+}
+pesos[1] = valor_temp
+escreva("")
+
+escreva("Digite a nota do 3o bimestre:")
+ler(valor_temp)
+while (valor_temp <= 0) {
+    escreva("Erro! A nota deve ser um valor positivo. Digite novamente:")
+    ler(valor_temp)
+}
+notas[2] = valor_temp
+
+escreva("Agora, digite o peso para a nota 3:")
+ler(valor_temp)
+while (valor_temp <= 0) {
+    escreva("Erro! O peso deve ser um valor positivo. Digite novamente:")
+    ler(valor_temp)
+}
+pesos[2] = valor_temp
+escreva("")
+
+escreva("Digite a nota do 4o bimestre:")
+ler(valor_temp)
+while (valor_temp <= 0) {
+    escreva("Erro! A nota deve ser um valor positivo. Digite novamente:")
+    ler(valor_temp)
+}
+notas[3] = valor_temp
+
+escreva("Agora, digite o peso para a nota 4:")
+ler(valor_temp)
+while (valor_temp <= 0) {
+    escreva("Erro! O peso deve ser um valor positivo. Digite novamente:")
+    ler(valor_temp)
+}
+pesos[3] = valor_temp
+
+
+escreva("")
+escreva("Calculando a media ponderada...")
+
+
+soma_ponderada = (notas[0] * pesos[0]) + (notas[1] * pesos[1]) + (notas[2] * pesos[2]) + (notas[3] * pesos[3])
+soma_pesos = pesos[0] + pesos[1] + pesos[2] + pesos[3]
+media_final = soma_ponderada / soma_pesos
+
+
+escreva("")
+escreva("--- Boletim Final ---")
+escreva("Nota 1:", notas[0], "(Peso:", pesos[0], ")")
+escreva("Nota 2:", notas[1], "(Peso:", pesos[1], ")")
+escreva("Nota 3:", notas[2], "(Peso:", pesos[2], ")")
+escreva("Nota 4:", notas[3], "(Peso:", pesos[3], ")")
+escreva("---------------------")
+escreva("Media Ponderada Final:", media_final)
+
+if (media_final >= 7) {
+    escreva("Status: Aprovado")
+} else {
+    escreva("Status: Reprovado")
+}
+
+fim
