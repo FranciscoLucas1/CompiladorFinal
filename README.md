@@ -159,7 +159,6 @@ ESCREVA("A média é:", notas[2])
 |               | `-`      | Subtração                       |
 |               | `*`      | Multiplicação                   |
 |               | `/`      | Divisão                         |
-|               | `-`      | Menos Unário (inversão de sinal)|
 | Comparação    | `>`      | Maior que                       |
 |               | `<`      | Menor que                       |
 |               | `>=`     | Maior ou igual a                |
