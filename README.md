@@ -49,23 +49,23 @@ Use `=` para atribuir valores:
 ```fplus
 var status
 status = 100         // 'status' é Número
-ESCREVA(status)      // Imprime 100.00
+escreva(status)      // Imprime 100.00
 
 status = "Ativo"     // Agora é Texto
-ESCREVA(status)      // Imprime Ativo
+escreva(status)      // Imprime Ativo
 ```
 
 ---
 
 ## 3. Entrada e Saída 
 
-### Escrevendo na Tela: `ESCREVA`
+### Escrevendo na Tela: `escreva`
 
 Imprimir um único item:
 
 ```fplus
-ESCREVA("Bem-vindo!")
-ESCREVA(variavel)
+escreva("Bem-vindo!")
+escreva(variavel)
 ```
 
 Imprimir múltiplos itens:
@@ -73,19 +73,18 @@ Imprimir múltiplos itens:
 ```fplus
 var nome = "Lucas"
 var idade = 28
-ESCREVA("Usuário:", nome, "tem", idade, "anos.")
-// Saída: Usuario: Lucas tem 28.00 anos.
+escreva("Usuário:", nome, "tem", idade, "anos.")
 ```
 
-### Lendo do Teclado: `LER`
+### Lendo do Teclado: `ler`
 
 ```fplus
 var entrada
-ESCREVA("Digite seu nome:")
-LER(entrada)
+escreva("Digite seu nome:")
+ler(entrada)
 
-ESCREVA("Agora, digite sua idade:")
-LER(entrada) 
+escreva("Agora, digite sua idade:")
+ler(entrada) 
 ```
 
 ---
@@ -94,12 +93,12 @@ LER(entrada)
 
 Os blocos de código são delimitados por chaves `{}`.
 
-### IF e ELSE
+### IF E ELSE
 
 ```fplus
 var idade = 20
-IF (idade >= 18) {
-    ESCREVA("Maior de idade")
+if (idade >= 18) {
+    escreva("Maior de idade")
 }
 ```
 
@@ -107,10 +106,10 @@ Com `ELSE`:
 
 ```fplus
 var nota = 5.5
-IF (nota >= 7) {
-    ESCREVA("Aprovado")
-} ELSE {
-    ESCREVA("Reprovado")
+if (nota >= 7) {
+    escreva("Aprovado")
+} else {
+    escreva("Reprovado")
 }
 ```
 
@@ -120,9 +119,9 @@ IF (nota >= 7) {
 var contador
 contador = 5
 
-ESCREVA("Contagem")
-WHILE (contador > 0) {
-    ESCREVA(contador, "...")
+escreva("Contagem")
+while (contador > 0) {
+    escreva(contador, "...")
     contador = contador - 1
 }
 
@@ -146,7 +145,7 @@ notas[0] = 10
 notas[1] = 7.5
 notas[2] = (notas[0] + notas[1]) / 2
 
-ESCREVA("A média é:", notas[2])
+escreva("A média é:", notas[2])
 ```
 
 ---
