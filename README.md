@@ -48,11 +48,11 @@ Use `=` para atribuir valores:
 
 ```fplus
 var status
-status = 100         // 'status' é Número
-escreva(status)      // Imprime 100.00
+status = 100         
+escreva(status)      
 
-status = "Ativo"     // Agora é Texto
-escreva(status)      // Imprime Ativo
+status = "Ativo"     
+escreva(status)      
 ```
 
 ---
@@ -98,7 +98,8 @@ Os blocos de código são delimitados por chaves `{}`.
 ### IF E ELSE
 
 ```fplus
-var idade = 20
+var idade
+idade = 20
 if (idade >= 18) {
     escreva("Maior de idade")
 }
@@ -107,7 +108,8 @@ if (idade >= 18) {
 Com `ELSE`:
 
 ```fplus
-var nota = 5.5
+var nota
+nota = 5.5
 if (nota >= 7) {
     escreva("Aprovado")
 } else {
