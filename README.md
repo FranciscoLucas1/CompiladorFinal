@@ -71,8 +71,10 @@ escreva(variavel)
 Imprimir múltiplos itens:
 
 ```fplus
-var nome = "Lucas"
-var idade = 28
+var nome 
+nome = "Lucas"
+var idade 
+idade = 28
 escreva("Usuário:", nome, "tem", idade, "anos.")
 ```
 
